@@ -79,14 +79,16 @@ class _OnboardScreenState extends State<OnboardScreen> {
                               child: Text(
                                 'Connect people\naround the world',
                                 style: titleTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                             SizedBox(height: 10.0),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Proactively empower highly efficient growth strategies Completely enhance inexpensive best practices before front-end content. Completely procrastinate innovative vortals through maintainable leadership skills',
                                 style: descriptionTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],
@@ -110,14 +112,16 @@ class _OnboardScreenState extends State<OnboardScreen> {
                               child: Text(
                                 'Connect people\naround the world',
                                 style: titleTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                             SizedBox(height: 10.0),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Proactively empower highly efficient growth strategies Completely enhance inexpensive best practices before front-end content. Completely procrastinate innovative vortals through maintainable leadership skills',
                                 style: descriptionTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],
@@ -141,14 +145,16 @@ class _OnboardScreenState extends State<OnboardScreen> {
                               child: Text(
                                 'Connect people\naround the world',
                                 style: titleTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                             SizedBox(height: 10.0),
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Proactively empower highly efficient growth strategies Completely enhance inexpensive best practices before front-end content. Completely procrastinate innovative vortals through maintainable leadership skills',
                                 style: descriptionTextStyle,
+                                textAlign: TextAlign.center,
                               ),
                             ),
                           ],
