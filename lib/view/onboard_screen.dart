@@ -15,6 +15,25 @@ class _OnboardScreenState extends State<OnboardScreen> {
   final PageController _pageController = PageController(initialPage: 0);
   int _currentPage = 0;
 
+  List<Widget> _buildPageIndicator() {
+    List<Widget> list = [];
+    for (var i = 0; i < _numPages; i++) {
+      list.add(i == _currentPage ? _indicator(true) : _indicator(false));
+    }
+    return list;
+  }
+
+  Widget _indicator(bool isActive) {
+    return AnimatedContainer(
+      duration: Duration(milliseconds: 150),
+      margin: EdgeInsets.symmetric(horizontal: 8.0),
+      height: 8.0,
+      width: isActive ? 24.0 : 16.0,
+      decoration:
+          BoxDecoration(color: isActive ? Colors.black : Color(0xFF7B51D3)),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -163,6 +182,10 @@ class _OnboardScreenState extends State<OnboardScreen> {
                     ],
                     controller: _pageController,
                   ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: _buildPageIndicator(),
                 )
               ],
             ),
