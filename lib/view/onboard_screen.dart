@@ -34,7 +34,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
             ),
           ),
           child: Padding(
-            padding: EdgeInsets.symmetric(vertical: 20.0),
+            padding: EdgeInsets.symmetric(vertical: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -52,7 +52,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   ),
                 ),
                 Container(
-                  height: 700.0,
+                  height: 650.0,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
                     onPageChanged: (int page) {
@@ -143,7 +143,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Draw Insights\nand meaning from your work',
                                 style: titleTextStyle,
                                 textAlign: TextAlign.center,
                               ),
