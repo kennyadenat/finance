@@ -36,7 +36,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
           child: Padding(
             padding: EdgeInsets.symmetric(vertical: 20.0),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Container(
                   alignment: Alignment.centerRight,
@@ -52,7 +52,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   ),
                 ),
                 Container(
-                  height: 600.0,
+                  height: 700.0,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
                     onPageChanged: (int page) {
