@@ -77,7 +77,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Stay Connected\nas you work from home',
                                 style: titleTextStyle,
                                 textAlign: TextAlign.center,
                               ),
@@ -110,7 +110,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Connect people\naround the world',
+                                'Stay Engaged\nwhile doing your thing',
                                 style: titleTextStyle,
                                 textAlign: TextAlign.center,
                               ),
