@@ -68,7 +68,69 @@ class _OnboardScreenState extends State<OnboardScreen> {
                           children: <Widget>[
                             Center(
                               child: Image(
-                                image: AssetImage(cupcake),
+                                image: AssetImage(three),
+                                // height: 350.0,
+                                // width: 600.0,
+                              ),
+                            ),
+                            SizedBox(height: 20.0),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Text(
+                                'Connect people\naround the world',
+                                style: titleTextStyle,
+                              ),
+                            ),
+                            SizedBox(height: 10.0),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Text(
+                                'Connect people\naround the world',
+                                style: descriptionTextStyle,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: <Widget>[
+                            Center(
+                              child: Image(
+                                image: AssetImage(one),
+                                // height: 350.0,
+                                // width: 600.0,
+                              ),
+                            ),
+                            SizedBox(height: 20.0),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Text(
+                                'Connect people\naround the world',
+                                style: titleTextStyle,
+                              ),
+                            ),
+                            SizedBox(height: 10.0),
+                            Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 20.0),
+                              child: Text(
+                                'Connect people\naround the world',
+                                style: descriptionTextStyle,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(10.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: <Widget>[
+                            Center(
+                              child: Image(
+                                image: AssetImage(two),
                                 // height: 350.0,
                                 // width: 600.0,
                               ),
