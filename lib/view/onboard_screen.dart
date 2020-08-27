@@ -25,12 +25,13 @@ class _OnboardScreenState extends State<OnboardScreen> {
 
   Widget _indicator(bool isActive) {
     return AnimatedContainer(
-      duration: Duration(milliseconds: 150),
+      duration: Duration(milliseconds: 100),
       margin: EdgeInsets.symmetric(horizontal: 8.0),
       height: 8.0,
       width: isActive ? 24.0 : 16.0,
-      decoration:
-          BoxDecoration(color: isActive ? Colors.black : Color(0xFF7B51D3)),
+      decoration: BoxDecoration(
+          color: isActive ? Colors.black : Color(0xFF7B51D3),
+          borderRadius: BorderRadius.circular(20.0)),
     );
   }
 
@@ -47,7 +48,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
               colors: [
                 Color(0xFFFFFFFF),
                 Color(0xFFFFFFFF),
-                Color(0xFFFFFFFF),
+                Color(0xFFFFFFEE),
                 Color(0xFFFFFFFF),
               ],
             ),
@@ -71,7 +72,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                   ),
                 ),
                 Container(
-                  height: 650.0,
+                  height: 550.0,
                   child: PageView(
                     physics: ClampingScrollPhysics(),
                     onPageChanged: (int page) {
@@ -162,7 +163,7 @@ class _OnboardScreenState extends State<OnboardScreen> {
                             Padding(
                               padding: EdgeInsets.symmetric(horizontal: 20.0),
                               child: Text(
-                                'Draw Insights\nand meaning from your work',
+                                'Draw Insights\nwith the right tools',
                                 style: titleTextStyle,
                                 textAlign: TextAlign.center,
                               ),
@@ -186,12 +187,58 @@ class _OnboardScreenState extends State<OnboardScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: _buildPageIndicator(),
-                )
+                ),
+                _currentPage != _numPages - 1
+                    ? Expanded(
+                        child: Align(
+                          alignment: FractionalOffset.bottomRight,
+                          child: FlatButton(
+                            onPressed: () {
+                              _pageController.nextPage(
+                                duration: Duration(milliseconds: 500),
+                                curve: Curves.ease,
+                              );
+                            },
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Text('Next', style: buttonTextStyle),
+                                SizedBox(width: 10.0),
+                                Icon(
+                                  Icons.arrow_forward,
+                                  color: Color(0xFF4563DB),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      )
+                    : Text('')
               ],
             ),
           ),
         ),
       ),
+      bottomSheet: _currentPage == _numPages - 1
+          ? Container(
+              height: 90,
+              width: double.infinity,
+              color: Color(0xFF4563DB),
+              child: GestureDetector(
+                onTap: () => print("Get Started"),
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(bottom: 10.0),
+                    child: Text(
+                      'Get Started',
+                      style: startedTextStyle,
+                    ),
+                  ),
+                ),
+              ),
+            )
+          : Text(''),
     );
   }
 }

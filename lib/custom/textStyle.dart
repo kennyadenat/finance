@@ -6,3 +6,9 @@ TextStyle descriptionTextStyle = TextStyle(
 
 TextStyle titleTextStyle = TextStyle(
     fontSize: 26, color: Color(0xFF4563DB), fontWeight: FontWeight.w700);
+
+TextStyle buttonTextStyle = TextStyle(
+    fontSize: 24, color: Color(0xFF4563DB), fontWeight: FontWeight.w700);
+
+TextStyle startedTextStyle =
+    TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.w700);
