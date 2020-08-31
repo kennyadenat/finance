@@ -1,5 +1,6 @@
 import 'package:financial/common/constants.dart';
-import 'package:financial/view/onboard_screen.dart';
+import 'package:financial/view/covid_landing.dart';
+// import 'package:financial/view/onboard_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primaryColor: kPrimaryColor,
@@ -21,7 +23,8 @@ class MyApp extends StatelessWidget {
       //   primarySwatch: Colors.blue,
       //   fontFamily: 'Oxygen',
       // ),
-      home: OnboardScreen(),
+      home: CovidLanding(),
+      // home: OnboardScreen(),
     );
   }
 }
