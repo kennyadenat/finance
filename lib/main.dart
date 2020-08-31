@@ -1,3 +1,4 @@
+import 'package:financial/common/constants.dart';
 import 'package:financial/view/onboard_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,10 +11,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        canvasColor: Colors.white,
-        primarySwatch: Colors.blue,
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: kBackgroundColor,
+        textTheme: Theme.of(context).textTheme.apply(displayColor: kTextColor),
         fontFamily: 'Oxygen',
       ),
+      // theme: ThemeData(
+      //   canvasColor: Colors.white,
+      //   primarySwatch: Colors.blue,
+      //   fontFamily: 'Oxygen',
+      // ),
       home: OnboardScreen(),
     );
   }
