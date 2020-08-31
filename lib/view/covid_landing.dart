@@ -1,5 +1,6 @@
 import 'package:financial/common/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CovidLanding extends StatefulWidget {
   CovidLanding({Key key}) : super(key: key);
@@ -15,6 +16,7 @@ class _CovidLandingState extends State<CovidLanding> {
       appBar: buildAppBar(),
       body: Container(
         height: 300,
+        padding: EdgeInsets.only(top: 20, bottom: 40, right: 20, left: 20),
         width: double.infinity,
         decoration: BoxDecoration(
           color: kPrimaryColor.withOpacity(.06),
@@ -29,7 +31,18 @@ class _CovidLandingState extends State<CovidLanding> {
               child: Column(
                 children: <Widget>[
                   Row(
-                    children: <Widget>[],
+                    children: <Widget>[
+                      Container(
+                        alignment: Alignment.center,
+                        height: 30,
+                        width: 30,
+                        decoration: BoxDecoration(
+                          color: Colors.grey.withOpacity(0.1),
+                          shape: BoxShape.circle,
+                        ),
+                        child: SvgPicture.asset(""),
+                      ),
+                    ],
                   )
                 ],
               ),
