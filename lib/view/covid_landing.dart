@@ -27,27 +27,36 @@ class _CovidLandingState extends State<CovidLanding> {
             Container(
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(8.0),
+                borderRadius: BorderRadius.circular(10.0),
               ),
               child: Column(
                 children: <Widget>[
-                  Row(
-                    children: <Widget>[
-                      Container(
-                        alignment: Alignment.center,
-                        height: 30,
-                        width: 30,
-                        decoration: BoxDecoration(
-                          color: Colors.grey.withOpacity(0.1),
-                          shape: BoxShape.circle,
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          alignment: Alignment.center,
+                          height: 35,
+                          width: 35,
+                          decoration: BoxDecoration(
+                            color: Colors.grey.withOpacity(0.1),
+                            shape: BoxShape.circle,
+                          ),
+                          child: SvgPicture.asset(
+                            "assets/icons/002-vitamin.svg",
+                            height: 20,
+                            width: 20,
+                          ),
                         ),
-                        child: SvgPicture.asset(
-                          "",
-                          height: 15,
-                          width: 15,
-                        ),
-                      ),
-                    ],
+                        SizedBox(width: 5),
+                        Text(
+                          "Confirmed Case",
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
