@@ -13,6 +13,30 @@ class _CovidLandingState extends State<CovidLanding> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: buildAppBar(),
+      body: Container(
+        height: 300,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          color: kPrimaryColor.withOpacity(.06),
+        ),
+        child: Wrap(
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    children: <Widget>[],
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 
