@@ -1,4 +1,5 @@
 import 'package:financial/common/constants.dart';
+import 'package:financial/custom/images.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -40,7 +41,11 @@ class _CovidLandingState extends State<CovidLanding> {
                           color: Colors.grey.withOpacity(0.1),
                           shape: BoxShape.circle,
                         ),
-                        child: SvgPicture.asset(""),
+                        child: SvgPicture.asset(
+                          "",
+                          height: 15,
+                          width: 15,
+                        ),
                       ),
                     ],
                   )
